@@ -273,6 +273,7 @@ When evaluating cloud AgentOps capabilities, compare:
 - [Prometheus](https://prometheus.io/) - Metrics and alerting toolkit.
 - [Sentry](https://sentry.io/) - Application error monitoring and performance tracing.
 - [Vercel AI Gateway](https://vercel.com/ai-gateway) - Gateway for model routing, observability, and usage controls.
+- [AgentOps for senior engineers](https://aiarch.dev/agentops-for-senior-engineers) - Guide mapping SRE and DevOps practices (tracing, cost control, least privilege, evals) onto production agents, with two as-built production bugs.
 
 Agent-specific signals worth tracking:
 
