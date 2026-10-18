@@ -293,6 +293,7 @@ Agent-specific signals worth tracking:
 - [Google SRE Book](https://sre.google/sre-book/table-of-contents/) - Foundational reliability practices.
 - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook) - Practical guide for applying the NIST AI Risk Management Framework.
 - [Partnership on AI: AI Incident Database](https://incidentdatabase.ai/) - Database of AI-related incidents and harms.
+- [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) - Open database of real-world AI agent security incidents, each linked to primary sources and flagged for whether a victim was confirmed.
 
 Agent incident checklist:
 
