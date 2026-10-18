@@ -114,8 +114,10 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [Helicone](https://github.com/Helicone/helicone) - Open-source observability platform for LLM usage, cost, latency, and requests.
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Session replay, analytics, and observability for AI agents.
 - [ax](https://github.com/Necmttn/ax) - Local telemetry and recall graph for AI coding-agent sessions, including cost, tool, skill, routing, hook, and OTLP analytics.
+- [agent-watch](https://github.com/soul-sol/agent-watch) - POSIX shell scripts that classify background coding-agent runs as RUNNING, DONE, FAILED, or STALL and preflight transport versus authentication failures.
 - [Failproof](https://github.com/FailproofAI/failproofai) - Tracing and runtime policy enforcement for coding-agent harnesses such as Claude Code, Cursor, and GitHub Copilot.
 - [LiteLLM Lens](https://docs.litellm.ai/docs/proxy/lens) - Agent trace analysis for LiteLLM Proxy that investigates failures across runs, groups recurring problems, and links findings to the original OpenTelemetry traces.
+
 
 ## Evaluation and Testing
 
