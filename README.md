@@ -115,6 +115,7 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Session replay, analytics, and observability for AI agents.
 - [ax](https://github.com/Necmttn/ax) - Local telemetry and recall graph for AI coding-agent sessions, including cost, tool, skill, routing, hook, and OTLP analytics.
 - [Failproof](https://github.com/FailproofAI/failproofai) - Tracing and runtime policy enforcement for coding-agent harnesses such as Claude Code, Cursor, and GitHub Copilot.
+- [LiteLLM Lens](https://docs.litellm.ai/docs/proxy/lens) - Agent trace analysis for LiteLLM Proxy that investigates failures across runs, groups recurring problems, and links findings to the original OpenTelemetry traces.
 
 ## Evaluation and Testing
 
@@ -332,6 +333,8 @@ Operational concerns for multi-agent systems:
 - [AI Incident Database](https://incidentdatabase.ai/) - Public incident database useful for governance and risk analysis.
 - [Where Facts Go Missing: A Layerwise Taxonomy and Per-Layer Attribution of Information Omission in Air-Gapped LLM Agent Pipelines](https://arxiv.org/abs/2607.22448) - Presents a layerwise taxonomy and per-layer attribution method for locating information omissions in air-gapped LLM agent pipelines, helping operators evaluate and debug where facts are lost across pipeline stages.
 - [MemTrapBench](https://arxiv.org/abs/2608.20202) - Benchmark for cognitive traps in LLM memory use, showing that accurately retrieved memories can still induce reasoning fixation and belief distortion that degrade task performance, paired with AdaptiveMem, an inference-time method that checks whether retrieved memories apply before use.
+- [Identical Runs, Different Results](https://arxiv.org/abs/2609.33812) - Repeated-run study of coding agents on open-weight models showing that run-to-run variance can exceed differences between agent-model pairings, with guidance on run counts, compliance reporting, and cost comparison.
+- [MCP Error Messages Written for Developers Hurt the Most Capable Agents Most](https://arxiv.org/abs/2609.35381) - Survey of 3,001 error messages from 150 MCP servers and controlled experiments on how error text affects agent recovery from tool failures, with server-side and agent-side mitigations.
 
 ## Contributing
 
