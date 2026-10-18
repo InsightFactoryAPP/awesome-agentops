@@ -115,6 +115,9 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Session replay, analytics, and observability for AI agents.
 - [ax](https://github.com/Necmttn/ax) - Local telemetry and recall graph for AI coding-agent sessions, including cost, tool, skill, routing, hook, and OTLP analytics.
 - [agent-watch](https://github.com/soul-sol/agent-watch) - POSIX shell scripts that classify background coding-agent runs as RUNNING, DONE, FAILED, or STALL and preflight transport versus authentication failures.
+- [Failproof](https://github.com/FailproofAI/failproofai) - Tracing and runtime policy enforcement for coding-agent harnesses such as Claude Code, Cursor, and GitHub Copilot.
+- [LiteLLM Lens](https://docs.litellm.ai/docs/proxy/lens) - Agent trace analysis for LiteLLM Proxy that investigates failures across runs, groups recurring problems, and links findings to the original OpenTelemetry traces.
+
 
 ## Evaluation and Testing
 
@@ -127,6 +130,7 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [Braintrust](https://www.braintrust.dev/) - Evaluation, logging, and prompt iteration platform for AI products.
 - [AgentCompass](https://arxiv.org/abs/2607.13705) - Evaluation infrastructure for agent benchmarks, harnesses, environments, asynchronous execution, and trajectory-level failure analysis.
 - [LLMs Get Lost in Evolving User Intent](https://github.com/microsoft/evolving-intent) - Benchmark framework for testing whether agents track incrementally revealed, revised, and redirected user intent across multi-turn tasks.
+- [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) - Benchmark for browser agents on everyday tasks across live websites, with isolated runs and multi-layer execution traces.
 
 ## Replay and Debugging
 
@@ -144,6 +148,7 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [Rebuff](https://github.com/protectai/rebuff) - Prompt injection detection and mitigation framework.
 - [Lakera Guard](https://www.lakera.ai/lakera-guard) - Runtime protection for LLM applications against prompt injection and unsafe content.
 - [OpenAI Moderation](https://developers.openai.com/api/docs/guides/moderation) - Content safety models and moderation patterns.
+- [Speakeasy](https://www.speakeasy.com/product/ai-control-plane) - Control plane for policy enforcement, access control, and audit trails across AI agents, MCP servers, and tool calls.
 
 ## Security, Identity, and Access Control
 
@@ -153,6 +158,8 @@ AgentOps keeps agent behaviour observable, evaluable, constrained, and governabl
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft framework for red teaming generative AI systems.
 - [garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner and red-teaming tool.
 - [Invariant](https://github.com/invariantlabs-ai/invariant) - Testing and guardrails for agent behaviour and tool use.
+- [AffixIO](https://www.npmjs.com/package/affixio) - Agentic Pay Kit (`npm i affixio`) with host-side signed ACTION attestation / KYA for agent pay flows (x402BeforePay; not person KYC). ([GitHub](https://github.com/AffixIO/SDK)) ([docs](https://www.affix-io.com/agent-trust/))
+
 
 Operational topics to cover in production reviews:
 
@@ -180,10 +187,13 @@ Useful approval patterns:
 
 - [LiteLLM](https://github.com/BerriAI/litellm) - LLM gateway for model routing, budgets, retries, keys, and provider abstraction.
 - [Portkey](https://github.com/Portkey-AI/gateway) - AI gateway for observability, caching, routing, guardrails, and reliability.
+- [Bifrost](https://github.com/maximhq/bifrost) - OpenAI-compatible gateway for provider routing, failover, guardrails, usage controls, MCP, and production observability.
 - [Ray Serve](https://docs.ray.io/en/latest/serve/index.html) - Scalable model and application serving for Python workloads.
 - [BentoML](https://github.com/bentoml/BentoML) - Framework for building and deploying AI applications.
 - [Modal](https://modal.com/) - Serverless infrastructure for AI and data workloads.
 - [Fly.io](https://fly.io/) - Application runtime useful for globally deployed agent services.
+- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) - Self-hosted agent runtime with persistent sessions, MCP tools, sandbox providers, approvals, credentials, audit logs, and replay.
+- [Reef](https://github.com/Human-Agent-Society/reef) - Self-hosted agent serving runtime that records each request behind an OpenAI- and Anthropic-compatible endpoint, returns a receipt for attaching scores or feedback later, and publishes model or harness updates as versioned, rollback-capable artifacts without a restart.
 
 ## Cloud AgentOps Platforms
 
@@ -269,6 +279,7 @@ When evaluating cloud AgentOps capabilities, compare:
 - [Prometheus](https://prometheus.io/) - Metrics and alerting toolkit.
 - [Sentry](https://sentry.io/) - Application error monitoring and performance tracing.
 - [Vercel AI Gateway](https://vercel.com/ai-gateway) - Gateway for model routing, observability, and usage controls.
+- [AgentOps for senior engineers](https://aiarch.dev/agentops-for-senior-engineers) - Guide mapping SRE and DevOps practices (tracing, cost control, least privilege, evals) onto production agents, with two as-built production bugs.
 
 Agent-specific signals worth tracking:
 
@@ -285,6 +296,7 @@ Agent-specific signals worth tracking:
 - [Google SRE Book](https://sre.google/sre-book/table-of-contents/) - Foundational reliability practices.
 - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook) - Practical guide for applying the NIST AI Risk Management Framework.
 - [Partnership on AI: AI Incident Database](https://incidentdatabase.ai/) - Database of AI-related incidents and harms.
+- [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) - Open database of real-world AI agent security incidents, each linked to primary sources and flagged for whether a victim was confirmed.
 
 Agent incident checklist:
 
@@ -328,6 +340,8 @@ Operational concerns for multi-agent systems:
 - [AI Incident Database](https://incidentdatabase.ai/) - Public incident database useful for governance and risk analysis.
 - [Where Facts Go Missing: A Layerwise Taxonomy and Per-Layer Attribution of Information Omission in Air-Gapped LLM Agent Pipelines](https://arxiv.org/abs/2607.22448) - Presents a layerwise taxonomy and per-layer attribution method for locating information omissions in air-gapped LLM agent pipelines, helping operators evaluate and debug where facts are lost across pipeline stages.
 - [MemTrapBench](https://arxiv.org/abs/2608.20202) - Benchmark for cognitive traps in LLM memory use, showing that accurately retrieved memories can still induce reasoning fixation and belief distortion that degrade task performance, paired with AdaptiveMem, an inference-time method that checks whether retrieved memories apply before use.
+- [Identical Runs, Different Results](https://arxiv.org/abs/2609.33812) - Repeated-run study of coding agents on open-weight models showing that run-to-run variance can exceed differences between agent-model pairings, with guidance on run counts, compliance reporting, and cost comparison.
+- [MCP Error Messages Written for Developers Hurt the Most Capable Agents Most](https://arxiv.org/abs/2609.35381) - Survey of 3,001 error messages from 150 MCP servers and controlled experiments on how error text affects agent recovery from tool failures, with server-side and agent-side mitigations.
 
 ## Contributing
 
